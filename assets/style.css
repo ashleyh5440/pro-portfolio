@@ -1,36 +1,4 @@
-
-
-/* .parent {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .base-img {
-    position: relative;
-    top: 5%;
-    left: 5%;
-    object-fit: fill;
-  }
-  .y-button {
-    width: 7%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  } */
-
-
-
-
-
-/* image as the background */
-/* body {
-    background-image: url(./ds.png);
-    background-repeat: no-repeat;
-    background-size: 880px 905px; 
-    this doesn't seem sustainable with all the different screen sizes
-}  */
-
- /* image over the background */
+                                
 body {
     background-color: rgb(4, 53, 4);
 }
