@@ -19,27 +19,18 @@ body {
     margin: 2%;
 }
 
-.y-a-buttons {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start; */
-}
-
 .x-b-buttons img {
     width: 4%;
     margin: 2%;
 }
 
-.x-b-buttons {
-    /* display: flex;
-    flex-direction: column; */
-}
+/* can you do this with flexbox? */
 
 #y-button {
     position: absolute;
     bottom: 25%;
     left: 62%;
+    /* font-size: 20x; */
 }
 
 #a-button {
@@ -50,7 +41,7 @@ body {
 
 #x-button {
     position: absolute;
-    bottom: 30%;
+    bottom: 31%;
     left: 65%;
 }
 
@@ -60,3 +51,38 @@ body {
     left: 65%;
 }
 
+#profile-picture {
+    position: absolute;
+    width: 10%;
+    left: 45%;
+    bottom: 9.5%;
+    animation: fadeIn 10s;
+}
+
+/* how do you have multiple of these? just set different times? */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+/* p {
+    display: none;
+    font-size: 20px;
+  } */
+
+
+/* .y:hover::before {
+} 
+
+div:hover p {
+    display: block;
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+  } */
+/* this isn't working */
+
+/* also tried "title" in the html which worked but didn't let me format */
+
+/* make a section appear/disappear as you scroll or click on something? */
