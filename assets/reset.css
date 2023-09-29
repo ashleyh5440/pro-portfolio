@@ -31,3 +31,11 @@ pre, code {
 ol, ul {
   list-style: none;
 }
+
+title {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+  background-color: none;
+}
+

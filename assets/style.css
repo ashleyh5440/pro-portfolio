@@ -3,6 +3,22 @@ body {
     background-color: rgb(12, 104, 12);
 }
 
+title p {
+    font-size: 70px;
+}
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+/* a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+  } */
+
+
 .base {
     position: relative;
 }
@@ -10,6 +26,31 @@ body {
 .ds-background img {
     animation-duration: 3s;
   animation-name: slidein; 
+}
+
+.main-content {
+    background-color: blue;
+}
+
+.card {
+    flex: 1 0 0;
+    border: 3px solid pink;
+    text-align: center;
+    width: 80%;
+}
+
+.card header {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2%;
+}
+
+.card img {
+    width: 50%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #base-img{
@@ -46,7 +87,7 @@ body {
 
 #x-button {
     position: absolute;
-    bottom: 31%;
+    bottom: 30.5%;
     left: 65%;
 }
 
@@ -59,14 +100,14 @@ body {
 #ds1 {
     position: absolute;
     left: 38.5%;
-    bottom: 60%;
+    bottom: 59.5%;
     width: 23%;
 }
 
 #ds2 {
     position: absolute;
     left: 38.5%;
-    bottom: 10%;
+    bottom: 9.5%;
     width: 23%;
 }
 
@@ -78,11 +119,29 @@ body {
     animation: fadeIn 4s;
 }
 
+#name {
+    position: absolute;
+    width: 17%;
+    left: 41%;
+    bottom: 70%;
+    animation: fadeIn 4s, floating;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
 /* how do you have multiple of these? just set different times? */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
 
   @keyframes slidein {
     from {
@@ -115,3 +174,13 @@ div:hover p {
 /* also tried "title" in the html which worked but didn't let me format */
 
 /* make a section appear/disappear as you scroll or click on something? */
+
+
+
+
+/* figure { 
+    position: relative; display: block; overflow: hidden; }
+    /* figure img { max-width: 100% } */
+    figure .caption { position: absolute; display: block; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; transition: all .2s ease-in-out }
+    figure:hover .caption { opacity: 1; 
+    } */
