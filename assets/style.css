@@ -110,6 +110,22 @@ body {
 }
 
 
+.card1 {
+    border: 3px solid black;
+    margin: 5%;
+}
+
+.card2 {
+    border: 3px solid black;
+    margin: 5%;
+}
+
+.card3 {
+    border: 3px solid black;
+    margin: 5%;
+}
+
+
 /* how do you have multiple of these? just set different times? */
 @keyframes fadeIn {
     0% { opacity: 0; }
