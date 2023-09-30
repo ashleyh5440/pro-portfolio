@@ -97,11 +97,17 @@ body {
 
 /* content section */
 
+.about-me {
+    background-color: blue;
+}
 
+.my-works {
+    background-color: purple;
+}
 
-
-
-
+.contact-me {
+    background-color: red;
+}
 
 
 /* how do you have multiple of these? just set different times? */
