@@ -102,16 +102,24 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .about-me {
     background-color: blue;
+    padding: 1%;
+    margin: 0px;
 }
 
 .my-works {
     background-color: purple;
+    padding: 1%;
 }
 
 .contact-me {
     background-color: red;
+    padding: 1%;
 }
 
 .cards {
