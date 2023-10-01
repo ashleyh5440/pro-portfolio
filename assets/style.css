@@ -1,6 +1,6 @@
                                 
 body {
-    background-color: rgb(12, 104, 12);
+    background-color: #397367;
 }
 
 .base {
@@ -10,10 +10,6 @@ body {
 .ds-background img {
     animation-duration: 3s;
   animation-name: slidein; 
-}
-
-.main-content {
-    background-color: blue;
 }
 
 #base-img{
@@ -107,18 +103,18 @@ p {
 }
 
 .about-me {
-    background-color: blue;
+    background-color: #63CCCA;
     padding: 1%;
     margin: 0px;
 }
 
 .my-works {
-    background-color: purple;
+    background-color: #5DA399;
     padding: 1%;
 }
 
 .contact-me {
-    background-color: red;
+    background-color: #42858C;
     padding: 1%;
 }
 
