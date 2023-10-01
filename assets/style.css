@@ -109,20 +109,32 @@ body {
     background-color: red;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
 
 .card1 {
     border: 3px solid black;
-    margin: 5%;
+    margin: 2% 5% auto 5%;
+    width: 90%;
+    background-color: white;
 }
 
 .card2 {
     border: 3px solid black;
-    margin: 5%;
+    margin: 0.5% 0.5% 2% 5%;
+    width: 50%;
+    background-color: white;
 }
 
 .card3 {
     border: 3px solid black;
-    margin: 5%;
+    margin: 0.5% 4% 2% 0.5%;
+    width: 50%;
+    background-color: white;
 }
 
 
