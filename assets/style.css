@@ -97,6 +97,11 @@ body {
 
 /* content section */
 
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
 .about-me {
     background-color: blue;
 }
@@ -121,6 +126,8 @@ body {
     margin: 2% 5% auto 5%;
     width: 90%;
     background-color: white;
+    text-align: center;
+    /* this also centered the image */
 }
 
 .card2 {
@@ -128,6 +135,7 @@ body {
     margin: 0.5% 0.5% 2% 5%;
     width: 50%;
     background-color: white;
+    text-align: center;
 }
 
 .card3 {
@@ -135,8 +143,23 @@ body {
     margin: 0.5% 4% 2% 0.5%;
     width: 50%;
     background-color: white;
+    text-align: center;
 }
 
+#study-guide {
+    width: 70%;
+    margin: 3%;
+}
+
+#refactoring-code {
+    width: 50%;
+    margin: 3%;
+}
+
+#portfolio-mockup {
+    width: 50%;
+    margin: 3%;
+}
 
 /* how do you have multiple of these? just set different times? */
 @keyframes fadeIn {
