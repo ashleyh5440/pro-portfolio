@@ -41,6 +41,12 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     /* font-size: 20x; */
 }
 
+#y-button:hover {
+    border: 3px solid blue;
+    border-radius: 50%;
+    /* how do you add text? */
+}
+
 #a-button {
     position: absolute;
     bottom: 25%;
@@ -78,6 +84,8 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     width: 10%;
     left: 45%;
     bottom: 9.5%;
+    /* not working
+    animation-delay: 4s; */
     animation: fadeIn 4s;
 }
 
@@ -92,9 +100,10 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px;
+    /* the fadeIn isn't working */
 }
 
-nav {
+nav a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -102,6 +111,8 @@ nav {
     /* this one isn't working */
     align-content: space-between;
     font-size: 25px;
+    /* top: 400px;
+    position: absolute; */
 }
 
 /* content section */
@@ -117,7 +128,7 @@ p {
     text-align: center;
 }
 
-.about-me {
+#about-me {
     background-color: #63CCCA;
     padding: 1%;
     margin-top: 5%;
@@ -169,18 +180,28 @@ p {
 }
 
 #study-guide {
-    width: 70%;
-    margin: 3%;
+    width: 100%;
+    /* margin: 3%; */
+    margin-left: 0%; 
 }
 
 #refactoring-code {
-    width: 50%;
-    margin: 3%;
+    width: 100%;
+    /* margin: 3%; */
 }
 
 #portfolio-mockup {
-    width: 50%;
-    margin: 3%;
+    width: 100%;
+    /* margin: 3%; */
+}
+
+
+/* why is it so big? */
+/* to answer: the border was originally going around the margins of the images, not the images themselves */
+figure:hover a {
+    border: 5px solid red;
+    display: block;
+    margin: 0 auto;
 }
 
 /* how do you have multiple of these? just set different times? */
@@ -323,10 +344,10 @@ p {
         bottom: 20.5%;
         left: 79%;
     }
-    .ds-background img {
+    /* .ds-background img {
         animation-duration: 3s;
       animation-name: slidein; 
-    }
+    } */
     #ds1 {
         position: absolute;
         left: 29.5%;
@@ -363,35 +384,13 @@ nav {
 
 
 
+/* #y-button:hover {
+    border: 3px solid blue;
+    border-radius: 50%;
+} */
 
 
-/* p {
-    display: none;
-    font-size: 20px;
-  } */
-
-
-/* .y:hover::before {
-} 
-
-div:hover p {
-    display: block;
-    position: absolute;
-    left: 30%;
-    bottom: 50%;
-  } */
-/* this isn't working */
 
 /* also tried "title" in the html which worked but didn't let me format */
 
 /* make a section appear/disappear as you scroll or click on something? */
-
-
-
-
-/* figure { 
-    position: relative; display: block; overflow: hidden; }
-    figure img { max-width: 100% }
-    figure .caption { position: absolute; display: block; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; transition: all .2s ease-in-out }
-    figure:hover .caption { opacity: 1; 
-    }  */
