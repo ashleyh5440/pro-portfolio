@@ -42,15 +42,23 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
 }
 
 #y-button:hover {
-    border: 3px solid blue;
+    box-shadow: 0 0 10px 10px white;
     border-radius: 50%;
     /* how do you add text? */
 }
+
+/* #y-button::after {
+    content: "Contact Me";
+} */
 
 #a-button {
     position: absolute;
     bottom: 25%;
     left: 68%; 
+}
+#a-button:hover {
+    box-shadow: 0 0 10px 10px white;
+    border-radius: 50%;
 }
 
 #x-button {
@@ -63,6 +71,11 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     position: absolute;
     bottom: 19%;
     left: 65%;
+}
+
+#b-button:hover {
+    box-shadow: 0 0 10px 10px white;
+    border-radius: 50%;
 }
 
 #ds1 {
@@ -135,13 +148,13 @@ p {
     border: 10px groove rgba(255, 255, 255, 0.562);
 }
 
-.my-works {
+#my-works {
     background-color: #5DA399;
     padding: 1%;
     border: 10px groove rgba(255, 255, 255, 0.562);
 }
 
-.contact-me {
+#contact-me {
     background-color: #42858C;
     padding: 1%;
     border: 10px groove rgba(255, 255, 255, 0.562);
