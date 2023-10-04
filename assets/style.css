@@ -1,8 +1,50 @@
                                 
 body {
     background-color: #397367;
-    /* background: rgb(57,115,103);
-background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40%, rgba(93,163,153,1) 63%, rgba(66,133,140,1) 100%); */
+}
+
+nav, nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2%;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(98, 31, 129);
+    border: .5% solid rgb(98, 31, 129);
+    border-radius: 10%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 10px 4px rgb(74, 23, 97);
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+} 
+
+header {
+    font-size: 20px;
+}
+
+/* why is it so big? */
+/* to answer: the border was originally going around the margins of the images, not the images themselves */
+figure:hover a {
+    box-shadow: 0 0 10px 10px #397367;
+    display: block;
+    margin: 0 auto;
 }
 
 .base {
@@ -31,6 +73,38 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     width: 4%;
     margin: 2%;
 }
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card1 {
+    border: 3px solid black;
+    margin: 2% 5% auto 5%;
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    /* this also centered the image */
+}
+
+.card2 {
+    border: 3px solid black;
+    margin: 0.5% 0.5% 2% 5%;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+
+.card3 {
+    border: 3px solid black;
+    margin: 0.5% 4% 2% 0.5%;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+
 
 /* can you do this with flexbox? */
 
@@ -159,43 +233,6 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     /* the fadeIn isn't working */
 }
 
-nav, nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 2%;
-    /* this one isn't working */
-    font-size: 25px;
-    /* top: 400px;
-    position: absolute; */
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    background-color: rgb(98, 31, 129);
-    border: .5% solid rgb(98, 31, 129);
-    border-radius: 10%;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    box-shadow: 10px 4px rgb(74, 23, 97);
-}
-
-/* content section */
-
-h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
-p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
 #about-me {
     background-color: #63CCCA;
     padding: 1%;
@@ -215,38 +252,6 @@ p {
     border: 10px groove rgba(255, 255, 255, 0.562);
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-}
-
-.card1 {
-    border: 3px solid black;
-    margin: 2% 5% auto 5%;
-    width: 90%;
-    background-color: white;
-    text-align: center;
-    /* this also centered the image */
-}
-
-.card2 {
-    border: 3px solid black;
-    margin: 0.5% 0.5% 2% 5%;
-    width: 50%;
-    background-color: white;
-    text-align: center;
-}
-
-.card3 {
-    border: 3px solid black;
-    margin: 0.5% 4% 2% 0.5%;
-    width: 50%;
-    background-color: white;
-    text-align: center;
-}
-
 #study-guide {
     width: 100%;
     /* margin: 3%; */
@@ -261,16 +266,6 @@ p {
 #portfolio-mockup {
     width: 100%;
     /* margin: 3%; */
-}
-
-
-/* why is it so big? */
-/* to answer: the border was originally going around the margins of the images, not the images themselves */
-figure:hover a {
-    /* border: 5px solid red; */
-    box-shadow: 0 0 10px 10px #397367;
-    display: block;
-    margin: 0 auto;
 }
 
 /* how do you have multiple of these? just set different times? */
@@ -305,17 +300,13 @@ figure:hover a {
     align-items: center;
     flex-wrap: wrap;
     }  
-}
 
-@media screen and (max-width: 730px) {
     .card2, .card3 {
-    width: 80%;
-    margin: 2% 5% auto 5%;
-    }  
+        width: 80%;
+        margin: 2% 5% auto 5%;
+        }  
 }
 
-/* buttons and pictures move too */
-/* picture move in weird */
 @media screen and (max-width: 1120px) {
     #base-img {
     width: 80%;
