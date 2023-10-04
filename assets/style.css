@@ -47,19 +47,46 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     /* how do you add text? */
 }
 
-/* #y-button::after {
+#contact-link:hover::after {
     content: "Contact Me";
-} */
+    position: absolute;
+    bottom: 23%;
+    left: 62%;
+    border: 1px #aaaaaa solid;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 45%;
+    font-size: 20px;
+    text-align: center;;
+    padding: 12px;
+    color: #fff;
+    z-index: 1;
+  }
 
 #a-button {
     position: absolute;
     bottom: 25%;
     left: 68%; 
 }
+
 #a-button:hover {
     box-shadow: 0 0 10px 10px white;
     border-radius: 50%;
 }
+
+#about-link:hover::after {
+    content: "About Me";
+    position: absolute;
+    bottom: 23%;
+    left: 69%;
+    border: 1px #aaaaaa solid;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 45%;
+    font-size: 20px;
+    text-align: center;;
+    padding: 12px;
+    color: #fff;
+    z-index: 1;
+  }
 
 #x-button {
     position: absolute;
@@ -77,6 +104,22 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     box-shadow: 0 0 10px 10px white;
     border-radius: 50%;
 }
+
+#works-link:hover::after {
+    content: "My Works";
+    position: absolute;
+    bottom: 17%;
+    left: 66%;
+    border: 1px #aaaaaa solid;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 45%;
+    font-size: 20px;
+    text-align: center;;
+    padding: 12px;
+    color: #fff;
+    z-index: 1;
+  }
+
 
 #ds1 {
     position: absolute;
@@ -116,16 +159,28 @@ background: linear-gradient(180deg, rgba(57,115,103,1) 0%, rgba(99,204,202,1) 40
     /* the fadeIn isn't working */
 }
 
-nav a {
+nav, nav a {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 2%;
     /* this one isn't working */
-    align-content: space-between;
     font-size: 25px;
     /* top: 400px;
     position: absolute; */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(98, 31, 129);
+    border: .5% solid rgb(98, 31, 129);
+    border-radius: 10%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 10px 4px rgb(74, 23, 97);
 }
 
 /* content section */
@@ -212,7 +267,8 @@ p {
 /* why is it so big? */
 /* to answer: the border was originally going around the margins of the images, not the images themselves */
 figure:hover a {
-    border: 5px solid red;
+    /* border: 5px solid red; */
+    box-shadow: 0 0 10px 10px #397367;
     display: block;
     margin: 0 auto;
 }
@@ -294,8 +350,7 @@ figure:hover a {
         left: 75%;
     }
     .ds-background img {
-        animation-duration: 3s;
-      animation-name: slidein; 
+      animation: none;
     }
     #ds1 {
         position: absolute;
@@ -357,10 +412,9 @@ figure:hover a {
         bottom: 20.5%;
         left: 79%;
     }
-    /* .ds-background img {
-        animation-duration: 3s;
-      animation-name: slidein; 
-    } */
+    .ds-background img {
+        animation: none;
+    }
     #ds1 {
         position: absolute;
         left: 29.5%;
@@ -387,23 +441,3 @@ figure:hover a {
         bottom: 70%;
     }
 }
-
-@media screen and (max-width: 768px) {
-nav {
-    visibility: hidden;
-}
-}
-
-
-
-
-/* #y-button:hover {
-    border: 3px solid blue;
-    border-radius: 50%;
-} */
-
-
-
-/* also tried "title" in the html which worked but didn't let me format */
-
-/* make a section appear/disappear as you scroll or click on something? */

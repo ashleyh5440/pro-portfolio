@@ -9,23 +9,16 @@
 </head>
 <body>
   <main>
-     <!-- <nav>
-          <a href="#about-me">About Me</a>
-          <a href="#my-works">My Works</a>
-          <a href="#contact-me">Contact Me</a> -->
-          <!-- links aren't working for some reason -->
-          <!-- links didn't work because they have to be ids, not classes -->
-        <!-- </nav> -->
     <section class="base">
       <img id="base-img" src="./assets/images/ds.png" alt="">
         <div class="y-a-buttons">
-          <a href="#contact-me"><img id="y-button" src="./assets/images/y-button.png" alt="y button"></a>
+          <a href="#contact-me" id="contact-link"><img id="y-button" src="./assets/images/y-button.png" alt="y button"></a>
 
-        <a href="#about-me"><img id="a-button" src="./assets/images/a-button.png" alt="a button"></a>
+        <a href="#about-me" id="about-link"><img id="a-button" src="./assets/images/a-button.png" alt="a button"></a>
         </div>
         <div class="x-b-buttons">
           <img id="x-button" src="./assets/images/x-button.png" alt="x button">
-        <a href="#my-works"><img id="b-button" src="./assets/images/b-button.png" alt="b button"></a>
+        <a href="#my-works" id="works-link"><img id="b-button" src="./assets/images/b-button.png" alt="b button"></a>
         </div>
         <div class="ds-background">
           <img id="ds1" src="./assets/images/ds-image-1.png" alt="">
@@ -36,18 +29,21 @@
           <img id="name" src="./assets/images/name.png" alt="">
         </div>
     </section>
-
+    <nav>
+      <a href="#about-me">About Me</a>
+      <a href="#my-works">My Works</a>
+      <a href="#contact-me">Contact Me</a>
+          <!-- links aren't working for some reason -->
+          <!-- links didn't work because they have to be ids, not classes -->
+        </nav>
     <section>
-
       <section id="about-me">
         <h1>About Me</h1>
           <p>Copywriter by day and intrepid coder by night, my goal is transisition into a career as a professional software developer.</p>
       </section>
-
       <section id="my-works">
         <h1>My Works</h1>
           <p>Below are some projects I have worked on.</p>
-
           <section class="card1">
             <header>Coding Study Guide</header>
             <figure>
@@ -68,16 +64,13 @@
             </figure>
           </section>
         </section>
-
       </section>
-
       <section id="contact-me">
         <h1>Contact Me</h1>
         <p>Email: <a href="mailto:ashleyh5440@gmail.com">ashleyh5440@gmail.com</a>
         </p>
         <p>GitHub: <a href="https://github.com/ashleyh5440">ashleyh5440</a></p>
       </section>
-
     </section>
   
 
