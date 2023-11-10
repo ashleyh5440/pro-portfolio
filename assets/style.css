@@ -252,18 +252,18 @@ figure:hover a {
     border: 10px groove rgba(255, 255, 255, 0.562);
 }
 
-#study-guide {
+#top {
     width: 100%;
     /* margin: 3%; */
     margin-left: 0%; 
 }
 
-#refactoring-code {
+#left {
     width: 100%;
     /* margin: 3%; */
 }
 
-#portfolio-mockup {
+#right {
     width: 100%;
     /* margin: 3%; */
 }
