@@ -29,6 +29,8 @@ nav a {
 h1 {
     font-size: 30px;
     text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 50px;
 }
 
 p {
@@ -44,7 +46,6 @@ header {
 button {
     border-radius: 45%;
     border: none;
-    width: 
 }
 
 figure:hover a {
@@ -59,11 +60,6 @@ figure:hover a {
 
 .base {
     position: relative;
-}
-
-.ds-background img {
-    animation-duration: 3s;
-  animation-name: slidein; 
 }
 
 #base-img{
@@ -106,7 +102,6 @@ figure:hover a {
     width: 90%;
     background-color: white;
     text-align: center;
-    /* this also centered the image */
 }
 
 .card2 {
@@ -221,28 +216,11 @@ figure:hover a {
     z-index: 1;
   }
 
-
-#ds1 {
-    position: absolute;
-    left: 38.5%;
-    bottom: 59.5%;
-    width: 23%;
-}
-
-#ds2 {
-    position: absolute;
-    left: 38.5%;
-    bottom: 9.5%;
-    width: 23%;
-}
-
 #profile-picture {
     position: absolute;
     width: 10%;
     left: 45%;
-    bottom: 9.5%;
-    /* not working
-    animation-delay: 4s; */
+    bottom: 7%;
     animation: fadeIn 4s;
 }
 
@@ -250,7 +228,7 @@ figure:hover a {
     position: absolute;
     width: 17%;
     left: 41%;
-    bottom: 70%;
+    bottom: 65%;
     animation: fadeIn 4s, floating;
     animation-name: floating;
     animation-duration: 3s;
@@ -260,23 +238,9 @@ figure:hover a {
     /* the fadeIn isn't working */
 }
 
-#about-me {
-    background-color: #63CCCA;
+#about-me, #my-works, #contact-me {
     padding: 1%;
-    margin-top: 5%;
-    border: 10px groove rgba(255, 255, 255, 0.562);
-}
-
-#my-works {
-    background-color: #5DA399;
-    padding: 1%;
-    border: 10px groove rgba(255, 255, 255, 0.562);
-}
-
-#contact-me {
-    background-color: #42858C;
-    padding: 1%;
-    border: 10px groove rgba(255, 255, 255, 0.562);
+    margin: 5%;
 }
 
 #top {
@@ -284,14 +248,21 @@ figure:hover a {
     margin-left: 0%; 
 }
 
-#left {
+#left, #right {
     width: 100%;
 }
 
-#right {
-    width: 100%;
+#back-button {
+    border-radius: 0%;
+    width: 15%;
+    font-size: 25px;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #a30092;
 }
 
+#back-button:hover {
+    transform: scale(1.2);
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -316,7 +287,7 @@ figure:hover a {
     }
   }
 
-  @media screen and (max-width: 730px) {
+  /* @media screen and (max-width: 730px) {
     .cards {
     display: flex;
     flex-direction: column;
@@ -455,4 +426,4 @@ figure:hover a {
         left: 35%;
         bottom: 70%;
     }
-}
+} */
