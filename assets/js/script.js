@@ -1,43 +1,37 @@
+
 const yBtn = document.getElementById("y-button");
 const aBtn = document.getElementById("a-button");
 const bBtn = document.getElementById("b-button");
-const backBtn = document.getElementById("back-button");
+
+homeBtn = document.getElementById("home-button");
+aboutBtn = document.getElementById("about-button");
+worksBtn = document.getElementById("works-button");
+contactBtn = document.getElementById("contact-button");
 
 const aboutInfo = document.getElementById("about-me");
 const worksInfo = document.getElementById("my-works");
 const contactInfo = document.getElementById("contact-me");
 
-const baseImg = document.getElementById("header-img")
-
 yBtn.addEventListener('click', function() {
-    backBtn.classList.remove("hidden");
-    contactInfo.classList.remove("hidden");
-    baseImg.classList.add("hidden")
+    window.location.href = 'info.html#contact-me';
 });
 
 aBtn.addEventListener('click', function() {
-    backBtn.classList.remove("hidden");
-    aboutInfo.classList.remove("hidden");
-    baseImg.classList.add("hidden")
+    window.location.href = 'info.html#about-me';
 });
 
 bBtn.addEventListener('click', function() {
-    backBtn.classList.remove("hidden");
-    worksInfo.classList.remove("hidden");
-    baseImg.classList.add("hidden")
+    window.location.href = 'info.html#my-works';
 });
 
-backBtn.addEventListener('click', function() {
-    baseImg.classList.remove("hidden")
-    contactInfo.classList.add("hidden");
-    aboutInfo.classList.add("hidden");
-    worksInfo.classList.add("hidden");
+homeBtn.addEventListener('click', function() {
+    window.location.href = 'index.html';
 });
 
-
-
-
-
+worksBtn.addEventListener('click', function() {
+    worksInfo.scrollIntoView({ behavior: 'smooth' });
+    console.log(worksBtn)
+});
 
 
 

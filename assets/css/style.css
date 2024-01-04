@@ -54,9 +54,9 @@ figure:hover a {
     margin: 0 auto;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 .base {
     position: relative;
@@ -238,9 +238,12 @@ figure:hover a {
     /* the fadeIn isn't working */
 }
 
-#about-me, #my-works, #contact-me {
-    padding: 1%;
-    margin: 5%;
+#home-button, #about-button, #works-button, #contact-button {
+    border-radius: 0%;
+    width: 15%;
+    font-size: 25px;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #a30092;
 }
 
 #top {
