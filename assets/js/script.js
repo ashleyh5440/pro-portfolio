@@ -1,17 +1,12 @@
-
+//DS buttons
 const yBtn = document.getElementById("y-button");
 const aBtn = document.getElementById("a-button");
 const bBtn = document.getElementById("b-button");
+const aboutBtn = document.getElementById("index-about-button");
+const worksBtn = document.getElementById("index-works-button");
+const contactBtn = document.getElementById("index-contact-button");
 
-homeBtn = document.getElementById("home-button");
-aboutBtn = document.getElementById("about-button");
-worksBtn = document.getElementById("works-button");
-contactBtn = document.getElementById("contact-button");
-
-const aboutInfo = document.getElementById("about-me");
-const worksInfo = document.getElementById("my-works");
-const contactInfo = document.getElementById("contact-me");
-
+//click events for buttons
 yBtn.addEventListener('click', function() {
     window.location.href = 'info.html#contact-me';
 });
@@ -24,13 +19,16 @@ bBtn.addEventListener('click', function() {
     window.location.href = 'info.html#my-works';
 });
 
-homeBtn.addEventListener('click', function() {
-    window.location.href = 'index.html';
+aboutBtn.addEventListener('click', function() {
+    window.location.href = 'info.html#about-me';
 });
 
 worksBtn.addEventListener('click', function() {
-    worksInfo.scrollIntoView({ behavior: 'smooth' });
-    console.log(worksBtn)
+    window.location.href = 'info.html#my-works';
+});
+
+contactBtn.addEventListener('click', function() {
+    window.location.href = 'info.html#contact-me';
 });
 
 

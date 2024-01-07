@@ -5,27 +5,6 @@ body {
     background-size: cover;
 }
 
-nav, nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 2%;
-    font-size: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    background-color: rgb(98, 31, 129);
-    border: .5% solid rgb(98, 31, 129);
-    border-radius: 10%;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    box-shadow: 10px 4px rgb(74, 23, 97);
-}
-
 h1 {
     font-size: 30px;
     text-align: center;
@@ -37,27 +16,9 @@ p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
-} 
-
-header {
-    font-size: 20px;
 }
 
-button {
-    border-radius: 45%;
-    border: none;
-}
-
-figure:hover a {
-    box-shadow: 0 0 10px 10px #397367;
-    display: block;
-    margin: 0 auto;
-}
-
-/* .hidden {
-    display: none;
-} */
-
+/* index.hml */
 .base {
     position: relative;
 }
@@ -65,20 +26,9 @@ figure:hover a {
 #base-img{
     width: 50%;
     margin-left: 25%; 
-    /* margin-bottom: 5%; */
     position: relative;
 
 }
-
-/* .y-a-buttons img {
-    width: 4%;
-    margin: 2%;
-}
-
-.x-b-buttons img {
-    width: 4%;
-    margin: 2%;
-} */
 
 .y-a-buttons {
     width: 4%;
@@ -90,34 +40,8 @@ figure:hover a {
     margin: 2%;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.card1 {
-    border: 3px solid black;
-    margin: 2% 5% auto 5%;
-    width: 90%;
-    background-color: white;
-    text-align: center;
-}
-
-.card2 {
-    border: 3px solid black;
-    margin: 0.5% 0.5% 2% 5%;
-    width: 50%;
-    background-color: white;
-    text-align: center;
-}
-
-.card3 {
-    border: 3px solid black;
-    margin: 0.5% 4% 2% 0.5%;
-    width: 50%;
-    background-color: white;
-    text-align: center;
+.hidden {
+    display: none;
 }
 
 #y-button {
@@ -127,6 +51,8 @@ figure:hover a {
     width: 2.5%;
     height: 4%;
     background-color: #a30092;
+    border-radius: 45%;
+    border: none;
 }
 
 #y-button:hover {
@@ -156,6 +82,8 @@ figure:hover a {
     width: 2.5%;
     height: 4%;
     background-color: #a30092;
+    border-radius: 45%;
+    border: none;
 }
 
 #a-button:hover {
@@ -185,6 +113,8 @@ figure:hover a {
     width: 2.5%;
     height: 4%;
     background-color: #a30092;
+    border-radius: 45%;
+    border: none;
 }
 
 #b-button {
@@ -194,6 +124,8 @@ figure:hover a {
     width: 2.5%;
     height: 4%;
     background-color: #a30092;
+    border-radius: 45%;
+    border: none;
 }
 
 #b-button:hover {
@@ -229,42 +161,70 @@ figure:hover a {
     width: 17%;
     left: 41%;
     bottom: 65%;
-    animation: fadeIn 4s, floating;
+    animation: floating;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px;
-    /* the fadeIn isn't working */
+}
+
+#index-about-button, #index-works-button, #index-contact-button {
+    border: none;
+    font-size: 25px;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #a30092;
+    margin-top: 5%;
+}
+
+/* info.html */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2%;
+    font-size: 25px;
+    margin-top: 5%;
+} 
+
+.project-img {
+    width: 99%;
+}
+
+#project1, #project2, #project3 {
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+#project1:hover {
+    box-shadow: 0 0 10px 10px #200282;
+    display: block;
+    margin: 0 auto;
+}
+
+#project2:hover {
+    box-shadow: 0 0 10px 10px #200282;
+    display: block;
+    margin: 0 auto;
+}
+
+#project3:hover {
+    box-shadow: 0 0 10px 10px #200282;
+    display: block;
+    margin: 0 auto;
 }
 
 #home-button, #about-button, #works-button, #contact-button {
-    border-radius: 0%;
-    width: 15%;
+    border: none;
     font-size: 25px;
     font-family: 'DotGothic16', sans-serif;
     background-color: #a30092;
 }
 
-#top {
-    width: 100%;
-    margin-left: 0%; 
-}
-
-#left, #right {
-    width: 100%;
-}
-
-#back-button {
-    border-radius: 0%;
-    width: 15%;
-    font-size: 25px;
-    font-family: 'DotGothic16', sans-serif;
-    background-color: #a30092;
-}
-
-#back-button:hover {
-    transform: scale(1.2);
+#about-me, #my-works {
+    margin-top: 7%;
 }
 
 @keyframes fadeIn {
@@ -290,143 +250,21 @@ figure:hover a {
     }
   }
 
-  /* @media screen and (max-width: 730px) {
-    .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    }  
-
-    .card2, .card3 {
-        width: 80%;
-        margin: 2% 5% auto 5%;
-        }  
-}
-
-@media screen and (max-width: 1120px) {
-    #base-img {
-    width: 80%;
-    margin: 2% 5% auto 10%;
-    }  
-    .y-a-buttons img {
-        width: 6%;
-        margin: 2%;
-    }
-    .x-b-buttons img {
-        width: 6%;
-        margin: 2%;
-    }
-    #y-button {
-        position: absolute;
-        bottom: 25.5%;
-        left: 71%;
-    }
-    #a-button {
-        position: absolute;
-        bottom: 25.5%;
-        left: 79%; 
-    }
-    #x-button {
-        position: absolute;
-        bottom: 31%;
-        left: 75%;
-    }
-    #b-button {
-        position: absolute;
-        bottom: 20%;
-        left: 75%;
-    }
-    .ds-background img {
-      animation: none;
-    }
-    #ds1 {
-        position: absolute;
-        left: 31.5%;
-        bottom: 58%;
-        width: 37%;
-    }
-    #ds2 {
-        position: absolute;
-        left: 31.5%;
-        bottom: 9%;
-        width: 37%;
-    }
-    #profile-picture {
-        position: absolute;
-        width: 15%;
-        left: 43%;
-        bottom: 9%;
-        animation: fadeIn 4s;
-    }
-    #name {
-        position: absolute;
-        width: 25%;
-        left: 37%;
-        bottom: 70%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #base-img {
-    width: 90%;
-    margin: 2% 5% auto 5%;
-    }  
-    .y-a-buttons img {
-        width: 6.5%;
-        margin: 2%;
-    }
-    .x-b-buttons img {
-        width: 6.5%;
-        margin: 2%;
-    }
-    #y-button {
-        position: absolute;
-        bottom: 26%;
-        left: 74%;
-    }
-    #a-button {
-        position: absolute;
-        bottom: 26%;
-        left: 83.5%; 
-    }
-    #x-button {
-        position: absolute;
-        bottom: 31.5%;
-        left: 79%;
-    }
-    #b-button {
-        position: absolute;
-        bottom: 20.5%;
-        left: 79%;
-    }
-    .ds-background img {
-        animation: none;
-    }
-    #ds1 {
-        position: absolute;
-        left: 29.5%;
-        bottom: 58.25%;
-        width: 41.5%;
-    }
-    #ds2 {
-        position: absolute;
-        left: 29.5%;
-        bottom: 9%;
-        width: 41.5%;
-    }
-    #profile-picture {
-        position: absolute;
-        width: 15%;
-        left: 43%;
-        bottom: 9%;
-        animation: fadeIn 4s;
-    }
-    #name {
-        position: absolute;
+  @media screen and (max-width: 767px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 35%;
         width: 30%;
-        left: 35%;
-        bottom: 70%;
     }
-} */
+    .row {
+        flex-direction: column;
+    }
+    #about-button, #works-button, #contact-button {
+        display: none;
+    }
+    .hidden {
+        display: flex;
+    }
+  }
+
